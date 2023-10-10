@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --green: #6c9a8b;
+  --coral: #e8998d;
+  --blush: #eed2cc;
+  --white: #fbf7f4;
+  --black: #403d39;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: var(--coral);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--green);
+}
+
+body {
+  background-image: url('../public/Green\ Watercolor\ Floral\ Background\ Bookmark.png');
+  background-size: cover;
+  background-color: var(--white);
+  color: var(--black);
+}

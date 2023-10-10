@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getNurseries } from "../../services/nurseryService"
 import { Nursery } from "./Nursery"
+import "./Nurseries.css"
 
 export const NurseriesList = () => {
   const [nurseries, setNurseries] = useState([])
