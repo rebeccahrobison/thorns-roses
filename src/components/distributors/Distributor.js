@@ -45,17 +45,19 @@ export const Distributor = ({ distributor }) => {
       <div className="distributor-info">
         <div className="distributor-flowers">
           <h4>Flowers distributed:</h4>
+          <div className="flower-container">
           {distributorFlowers.map((flower) => {
             return (
-              <div className="flower" key={flower?.id}>
+              <div className="flower" key={flower.id}>
                 <ul>
-                  <li><em>Species: </em>{flower?.flower?.species}</li>
-                  <li><em>Color: </em>{flower?.flower?.color}</li>
-                  <li><em>Price: </em>${((flower?.price)*(distributor.priceMarkup*.1)).toFixed(2)}</li>
+                  <li><em>Species: </em>{flower.flower.species}</li>
+                  <li><em>Color: </em>{flower.flower.color}</li>
+                  <li><em>Price: </em>${((flower.price)*(distributor.priceMarkup*.1)).toFixed(2)}</li>
                 </ul>
               </div>
             )
           })}
+          </div>
         </div>
       </div>
       <div className="distributor-info">

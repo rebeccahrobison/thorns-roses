@@ -3,7 +3,7 @@ export const getDistributors = () => {
 }
 
 export const getNurseryDistributorsByDistributorId = (distributorId) => {
-  return fetch(`http://localhost:8088/nurseryDistributors?distributorId=${distributorId}`).then(
+  return fetch(`http://localhost:8088/nurseryDistributors?distributorId=${distributorId}&_expand=nursery`).then(
     (res) => res.json()
   )
 }
