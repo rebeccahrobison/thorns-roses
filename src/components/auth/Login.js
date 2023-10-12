@@ -19,6 +19,7 @@ export const Login = () => {
           "thorns_user",
           JSON.stringify({
             id: user.id,
+            cart: 0
           })
           )
         navigate("/")

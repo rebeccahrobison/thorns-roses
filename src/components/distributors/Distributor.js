@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getDistributorRetailersByDistributorId, getNurseryDistributorsByDistributorId } from "../../services/distributorService"
 import { getNurseryFlowersById } from "../../services/nurseryService"
+import { Flowers } from "../flowers/Flowers"
 
 export const Distributor = ({ distributor }) => {
   const [nurseryDistributors, setNurseryDistributors] = useState([])
@@ -49,11 +50,7 @@ export const Distributor = ({ distributor }) => {
           {distributorFlowers.map((flower) => {
             return (
               <div className="flower" key={flower.id}>
-                <ul>
-                  <li><em>Species: </em>{flower.flower.species}</li>
-                  <li><em>Color: </em>{flower.flower.color}</li>
-                  <li><em>Price: </em>${((flower.price)*(distributor.priceMarkup*.1)).toFixed(2)}</li>
-                </ul>
+                  <Flowers flower={flower} priceMultiplier={distributor.priceMarkup*.1} />
               </div>
             )
           })}

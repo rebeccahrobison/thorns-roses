@@ -1,0 +1,45 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart {
+  background-color: var(--white);
+  border: solid var(--black) 2px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1 fr;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% auto 30%;
+}
+
+.row .header {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--coral);
+  text-shadow: 1px 1px 1px var(--black);
+}
+
+.row-cell {
+  border: solid var(--black) 1px;
+  padding: 2px;
+  text-align: center;
+}
+
+.total-price {
+  margin: 20px 0 0 40%;
+  padding: 5px 0;
+  background-color: var(--white);
+  border: solid var(--black) 2px;
+  align-self: center;
+}
+
+.total-price span {
+  padding: 5px;
+  border: solid var(--black) 1px;
+}
+

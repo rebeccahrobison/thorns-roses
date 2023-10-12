@@ -14,3 +14,9 @@ export const getNurseryDistributors = (nurseryId) => {
   )
 }
 
+export const getNurseryFlowersByFlowerId = (flowerId) => {
+  return fetch(`http://localhost:8088/nurseryFlowers?flowerId=${flowerId}`).then(
+    res => res.json()
+  )
+}
+

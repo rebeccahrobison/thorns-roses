@@ -1,31 +1,24 @@
 .nurseries-container {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .nurseries {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  /* max-width: 500px; */
 }
 
 .nursery-container {
   margin: 10px;
-  padding: 10px;
+  padding: 15px 30px 25px 30px;
   border: var(--blush) solid 3px;
   border-radius: 15px;
   background-color: var(--coral);
-  /* flex-grow: 1;
-  flex-basis: 1; */
-
 }
 
 .nursery-flowers {
@@ -35,5 +28,6 @@
 }
 
 h2 {
+  margin-top: 4rem;
   text-shadow: 1px 1px 2px var(--white);
 }

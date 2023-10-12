@@ -21,7 +21,8 @@ export const Register = () => {
         localStorage.setItem(
           "thorns_user",
           JSON.stringify({
-            id: createdUser.id
+            id: createdUser.id,
+            cart: 0
           })
         )
 

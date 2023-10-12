@@ -6,19 +6,15 @@
 
 .distributors {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
   align-items: center;
-  /* display: grid;
-  grid-template-columns: repeat(1, 4fr);
-  grid-auto-rows: 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px; */
 }
 
 .distributor-container {
   margin: 10px;
-  padding: 10px;
+  padding: 15px 30px 25px 30px;
   border: var(--blush) solid 3px;
   border-radius: 15px;
   background-color: var(--coral);
@@ -53,5 +49,5 @@ h2 {
 
 h3, h4 {
   margin: 20px 0 10px 0;
-  padding: 10px;
+  /* padding: 10px; */
 }

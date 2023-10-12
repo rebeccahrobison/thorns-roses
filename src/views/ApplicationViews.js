@@ -18,7 +18,7 @@ export const ApplicationViews = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<><NavBar /><Outlet /></>}>
+      <Route path="/" element={<><NavBar currentUser={currentUser}/><Outlet /></>}>
         <Route index element={<Welcome />} />
         <Route path="/nurseries" element={<NurseriesList/>} />
         <Route path="/distributors" element={<DistributorsList/>} />

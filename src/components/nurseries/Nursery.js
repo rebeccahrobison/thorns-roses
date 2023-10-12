@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getNurseryDistributors, getNurseryFlowersById } from "../../services/nurseryService"
 import "./Nurseries.css"
+import { Flowers } from "../flowers/Flowers"
 
 export const Nursery = ({ nursery }) => {
   const [nurseryFlowers, setNuseryFlowers] = useState([])
@@ -29,11 +30,9 @@ export const Nursery = ({ nursery }) => {
           <h4>Flowers Grown:</h4>
           {nurseryFlowers.map(flower => {
             return (
-              <ul className="flower" key={flower.id}>
-                <li><em>Species: </em>{flower?.flower.species}</li>
-                <li><em>Color: </em>{flower?.flower?.color}</li>
-                <li><em>Price: </em>${flower?.price}</li>
-              </ul>
+              <div key={flower.id}>
+                <Flowers flower={flower} priceMultiplier={1} />
+              </div>
             )
           })}
         </div>
